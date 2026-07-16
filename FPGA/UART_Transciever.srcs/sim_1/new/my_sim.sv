@@ -6,15 +6,22 @@ module my_sim();
         logic led;
         logic rx;
         logic rx_done_tick;
+        logic tx;
+        logic tx_done_tick;
         logic [7:0] dout;
+        logic [7:0] din;
         
-        Top_Module uut (.clk(clk), .reset_n(reset_n), .led(led), .rx(rx), .rx_done_tick(rx_done_tick), .dout(dout));
+        Top_Module uut (.clk(clk), .reset_n(reset_n), .led(led), .rx(rx), .tx(tx), 
+                        .tx_done_tick(tx_done_tick), .din(din),
+                        .rx_done_tick(rx_done_tick), .dout(dout));
         
         initial
         begin
             clk = 0;
             reset_n = 1;
             rx = 1;
+            tx = 1;
+            din = 8'b1010_1010;
         end
         
         always 
