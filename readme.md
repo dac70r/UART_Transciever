@@ -4,4 +4,5 @@
 2. 
 
 # Version Control
-1. 17.7.2026 - Added uart_tx.sv, did simulation but incomplete. Must add the tx part.
+- 17.7.2026 - uart_tx.sv now able to send but unable to change sent data on the fly.
+- 17.7.2026 - Added uart_tx.sv, did simulation but incomplete. Must add the tx part.

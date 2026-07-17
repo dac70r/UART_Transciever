@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dennis Wong/Documents/FPGA_Projects/UART_Transciever/FPGA/UART_Transciever.sim/sim_1/synth/timing/xsim/my_sim_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Module
+INFO: [VRFC 10-311] analyzing module baud_rate_generator
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Dennis Wong/Documents/FPGA_Projects/UART_Transciever/FPGA/UART_Transciever.srcs/sim_1/new/my_sim.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_sim
