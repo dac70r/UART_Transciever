@@ -3,7 +3,7 @@ module Top_Module(
         input clk,
         input reset_n,
         input rx,
-        input [7:0] din,
+        input [0:7] din,
         output rx_done_tick,
         output tx_done_tick,
         output [7:0] dout, 

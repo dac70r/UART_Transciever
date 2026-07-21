@@ -7,7 +7,7 @@ module uart_tx #(
            input clk,                       // clock crystal 
            input reset_n,                   // external crystal
            input s_tick,       
-           input [7:0] din,
+           input [0:7] din,
            output logic tx_done_tick,       // signal that this module has completed and other module can extract data
            output tx
     );
@@ -18,8 +18,8 @@ module uart_tx #(
     state_type state_now, state_next; 
     reg [7:0] s_next, s_reg;
     reg [7:0] b_next, b_reg;
-    reg tx_reg, tx_next;                             // register for transmit lane
-    reg [7:0] dataIn_reg = 8'b0110_0010;
+    reg tx_reg, tx_next;                             // register for transmit lane           
+    reg [7:0] dataIn_reg = 8'b0100_0110;             
     
     always_ff @ (posedge clk)
     begin
@@ -55,6 +55,7 @@ module uart_tx #(
                     s_next = 0;
                     b_next = 0;
                     state_next = start;
+                    dataIn_reg = din;
                 end
             start:
                 begin
@@ -64,7 +65,7 @@ module uart_tx #(
                             begin
                                 s_next = 0;
                                 state_next = data;
-                                tx_next = dataIn_reg[0];
+                                tx_next = dataIn_reg[7];
                                 tx_done_tick = 1;
                             end
                         else
@@ -88,7 +89,7 @@ module uart_tx #(
                                         end
                                     else
                                         begin
-                                            tx_next = dataIn_reg[7-b_reg];
+                                            tx_next = dataIn_reg[6-b_next];
                                             b_next = b_reg + 'd1; 
                                         end                   
                                 end

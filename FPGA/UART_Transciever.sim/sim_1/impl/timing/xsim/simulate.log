@@ -1,3 +1,1 @@
 Time resolution is 1 ps
-$finish called at time : 2190635 ns : File "C:/Users/Dennis Wong/Documents/FPGA_Projects/UART_Transciever/FPGA/UART_Transciever.srcs/sim_1/new/my_sim.sv" Line 76
-INFO: xsimkernel Simulation Memory Usage: 22604 KB (Peak: 22604 KB), Simulation CPU Usage: 289640 ms

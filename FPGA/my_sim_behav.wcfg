@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="my_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="my_sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,260.000001 us"></ZoomEndTime>
+      <Cursor1Time time="2,190.635000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="179"></NameColumnWidth>
+      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/my_sim/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/reset_n" type="logic">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/led" type="logic">
+      <obj_property name="ElementShortName">led</obj_property>
+      <obj_property name="ObjectShortName">led</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/rx" type="logic">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/rx_done_tick" type="logic">
+      <obj_property name="ElementShortName">rx_done_tick</obj_property>
+      <obj_property name="ObjectShortName">rx_done_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/tx" type="logic">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/tx_done_tick" type="logic">
+      <obj_property name="ElementShortName">tx_done_tick</obj_property>
+      <obj_property name="ObjectShortName">tx_done_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/dout" type="array">
+      <obj_property name="ElementShortName">dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/din" type="array">
+      <obj_property name="ElementShortName">din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/uut/my_uart_tx/b_next" type="array">
+      <obj_property name="ElementShortName">b_next[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b_next[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/uut/my_uart_tx/b_reg" type="array">
+      <obj_property name="ElementShortName">b_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">b_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/uut/my_uart_tx/tx_reg" type="logic">
+      <obj_property name="ElementShortName">tx_reg</obj_property>
+      <obj_property name="ObjectShortName">tx_reg</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/uut/my_uart_tx/tx_next" type="logic">
+      <obj_property name="ElementShortName">tx_next</obj_property>
+      <obj_property name="ObjectShortName">tx_next</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/uut/my_uart_tx/dataIn_reg" type="array">
+      <obj_property name="ElementShortName">dataIn_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dataIn_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/uut/my_uart_tx/state_now" type="array">
+      <obj_property name="ElementShortName">state_now[31:0]</obj_property>
+      <obj_property name="ObjectShortName">state_now[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/my_sim/uut/my_uart_tx/state_next" type="array">
+      <obj_property name="ElementShortName">state_next[31:0]</obj_property>
+      <obj_property name="ObjectShortName">state_next[31:0]</obj_property>
+   </wvobject>
+</wave_config>
